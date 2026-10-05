@@ -14,6 +14,7 @@ Simulação de desenvolvimento de uma miniaplicação web com controle de versã
 **Release 2 (v0.2)**:
   - Criação da página inicial do usuário Administrador (`pg001.html`).
   - Atualização do login para chamar diretamente a página do administrador sem consistência/validação.
+
 **Release 3 (v1.0)**:
   - Implementação completa das validações via JavaScript:
     - Campo usuário vazio: exibe página de mensagem de erro (`msg.html`).
