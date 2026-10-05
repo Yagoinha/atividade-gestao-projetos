@@ -7,11 +7,6 @@
         function validarLogin(event) {
             event.preventDefault();
             var usuario = document.getElementById("usuario").value.trim();
-
-            // Regras da atividade:
-            // Em branco -> msg.html
-            // 'admin' -> pg001.html (Administrador)
-            // Qualquer outro -> pg002.html (Operador)
             if (usuario === "") {
                 window.location.href = "msg.html";
             } else if (usuario.toLowerCase() === "admin") {
