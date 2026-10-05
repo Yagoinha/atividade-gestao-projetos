@@ -1,10 +1,7 @@
 # Sistema Hipotético para Atividade Prática
 
-## Integrantes do Grupo
-- [Nome do Integrante 1] - Prontuário: [XXXXX]
-- [Nome do Integrante 2] - Prontuário: [XXXXX]
-- [Nome do Integrante 3] - Prontuário: [XXXXX]
-
+- Yago Barbosa Dini - Prontuário: BP3062813
+  
 ## Propósito do Projeto
 Simulação de desenvolvimento de uma miniaplicação web com controle de versão utilizando Git e hospedagem no GitHub, aplicando conceitos de branches, pull requests, tags e releases para a disciplina de Gestão de Projetos de Software (4º ADS - IFSP Câmpus Bragança Paulista).
 
