@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema Hipotético - Login</title>
+    <script>
+        function validarLogin(event) {
+            event.preventDefault();
+            var usuario = document.getElementById("usuario").value.trim();
+
+            // Regras da atividade:
+            // Em branco -> msg.html
+            // 'admin' -> pg001.html (Administrador)
+            // Qualquer outro -> pg002.html (Operador)
+            if (usuario === "") {
+                window.location.href = "msg.html";
+            } else if (usuario.toLowerCase() === "admin") {
+                window.location.href = "pg001.html";
+            } else {
+                window.location.href = "pg002.html";
+            }
+            return false;
+        }
+    </script>
 </head>
 <body>
     <table border="0" width="100%">
@@ -18,7 +37,7 @@
     <hr>
     <br><br>
     <center>
-        <form action="pg001.html" method="get">
+        <form onsubmit="return validarLogin(event)">
             <table border="0" cellpadding="5">
                 <tr>
                     <td align="right"><b>USUÁRIO:</b></td>
@@ -30,8 +49,8 @@
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <br>
-                        <input type="submit" value="ENTRAR">
+                      <br>
+                      <input type="submit" value="ENTRAR">
                     </td>
                 </tr>
             </table>
